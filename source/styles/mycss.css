@@ -1,0 +1,108 @@
+/* Меняем шрифт */
+@import url("https://fonts.googleapis.com/css?family=Poppins&display=swap");
+
+body {
+  font-family: Poppins, serif;
+  background: linear-gradient(
+    90deg,
+    #b24040 0%,
+    #a0a01b 100%,
+    #000 100%,
+    #fff 100%
+  );
+}
+.nav-link {
+  color: rgb(42, 165, 69);
+}
+.navbar-nav .nav-link.active {
+  color: rgb(255, 0, 0);
+}
+.navbar-brand img {
+  width: 40px;
+}
+.navbar-toggler {
+  background-color: rgb(107, 107, 107);
+}
+.card {
+  box-shadow: 5px 5px 18px 1px #5b5b4a;
+}
+.sidebar {
+  background-color: #b24040;
+  border-radius: 10px;
+
+  /* border-top-left-radius: 10px; */
+  /* margin-top: 1rem; */
+}
+.row {
+  margin-right: 0.1rem;
+}
+.sidebar > p > a {
+  text-decoration: none;
+  color: rgb(180, 102, 28);
+  font-style: oblique;
+}
+.card {
+  background: linear-gradient(
+    90deg,
+    #b24040 0%,
+    #a0a01b 100%,
+    #000 100%,
+    #fff 100%
+  );
+}
+.carousel-indicators {
+  margin: -5px;
+}
+.slide-text {
+  margin: auto auto;
+}
+
+.footer-text {
+  font-size: smaller;
+}
+footer {
+  background: aliceblue;
+  margin-bottom: auto;
+}
+.media-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.phone-animation {
+  animation: myAnim 2s ease 0s infinite normal forwards;
+}
+
+@keyframes myAnim {
+  0% {
+    animation-timing-function: ease-out;
+    transform: scale(1);
+    transform-origin: center center;
+  }
+
+  10% {
+    animation-timing-function: ease-in;
+    transform: scale(0.91);
+  }
+
+  17% {
+    animation-timing-function: ease-out;
+    transform: scale(0.98);
+  }
+
+  33% {
+    animation-timing-function: ease-in;
+    transform: scale(0.87);
+  }
+
+  45% {
+    animation-timing-function: ease-out;
+    transform: scale(1);
+  }
+}
+
+@media (max-width: 767px) {
+  .carousel-indicators {
+    display: none;
+  }
+}
